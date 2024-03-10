@@ -190,3 +190,16 @@ export const likePost = async(req, res) => {
     });
   }
 };
+
+export const replyComment = async(req,res) => {
+  const {commentId, reply} = req.body;
+  const userId = req.user._id
+  try {
+    
+  }catch(error) (
+    res.status(500).json({
+      success:false,
+      message: "Internal server error"
+    })
+  )
+}
